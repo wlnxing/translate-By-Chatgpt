@@ -111,8 +111,9 @@ function App(props: {
     }
 
     if (
-      document.querySelector("body")?.getBoundingClientRect().bottom ??
-      2000 - props.rangeHeight < 50
+      (document.querySelector("body")?.getBoundingClientRect().bottom ?? 2000) -
+        props.rangeBottom <
+      50
     ) {
       topInner = topInner - props.rangeHeight - 60;
     }
@@ -131,7 +132,7 @@ function App(props: {
   //   top = top - props.rangeHeight - 200;
   // }
 
-  const left = props.rangeLeft + "px";
+  const left = props.rangeLeft;
 
   return (
     <p
