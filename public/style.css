@@ -1,0 +1,23 @@
+.trans {
+  position: absolute;
+  width: fit-content;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  display: block;
+  box-shadow: 0px 0px 2px 1px rgb(235 235 235);
+  background-color: rgb(247 247 247);
+  border-radius: 6px;
+  user-select: none;
+}
+
+.tran-box {
+  position: absolute;
+  box-shadow: 0px 0px 2px 1px rgb(235 235 235);
+  background-color: rgb(247 247 247);
+  width: fit-content;
+  height: fit-content;
+  padding: 3px 5px;
+  max-width: 550px;
+  word-wrap: break-word;
+}
